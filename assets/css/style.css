@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #fff;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    text-align: center;
+    padding: 100px 150px;
+}
+
+a {
+    text-decoration: none;
+    list-style: none    ;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.description {
+    font-size: 24px;
+}
+
+/***
+=============================================
+    Header
+=============================================
+***/
+
+.header {
+    background-image: url('../img/Desktop_Backgrounds_1920x1200_6\ 3.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+
+.menu__title {
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 16px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__item {
+    padding: 0 15px;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.nav__item :hover {
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.nav__toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/***
+=============================================
+    Hero 
+=============================================
+***/
+
+.logo {
+    width: 63px;
+    transition: 1s;
+}
+
+.logo:hover {
+    scale: 1.3;
+    transform: rotateY(180deg);
+}
+
+.hero h1 {
+    line-height: 64px;
+    padding-bottom: 30px;
+}
+
+.hero .description {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/***
+=============================================
+    Second Section
+=============================================
+***/
+
+.second {
+    background-color: #EEEEEE;
+}
+
+.second h1 {
+    color: #464547;
+}
+
+.second .description {
+    color: #666666;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.second p {
+    padding-top: 20px;
+    color: #666666;
+}
+
+/* contains 2 columns */
+
+.second__text {
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 85px;
+}
+
+.second .btn {
+    font-family: 'Oswald', sans-serif;
+    margin-top: 50px;
+    padding: 5px 18px;
+    border-radius: 18px;   
+    color: #fff;
+    background: #55C2D8;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    line-height: 26px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    transform-origin: left;
+    transform: rotate(8deg);
+}
+
+/***
+=============================================
+    About section
+=============================================
+***/
+
+.about {
+    background-image: url('../img/About_Backgroud.png');
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+
+.about h1 {
+    color: #fff;
+}
+
+.about .play-btn {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 50px 0;
+    transition: 1s;
+}
+
+.polygon {
+    color: #39C2D7;
+    font-size: 60px;
+    padding-left: 15px;
+    transition: 0.3s;
+}
+
+.play-btn:hover {
+    scale: 1.1;
+    background-color: #39C2D7;
+}
+
+.play-btn:hover .polygon {
+    color: #fff;
+}
+
+
+.about .description {
+    width: 390px;
+    color: #fff;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+/***
+=============================================
+    Footer
+=============================================
+***/
+
+footer {
+    background-color: #464547;
+    padding: 20px 145px;
+}
+
+/* footer contains - 3 columns */
+
+.footer__container {
+    display: grid;
+    grid-template-columns: 1fr 40% 1fr;
+    grid-template-rows: minmax(80px, auto);
+    padding: 20px 0 50px 0;
+}
+
+.project {
+    display: inline-flex;
+    align-items: start;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.project .logo {
+    width: 20px;
+}
+
+.project p {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-left: 16px;
+}
+
+.address {
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address p {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.4);
+    align-self: flex-end;
+}
+
+
+@media screen and (max-width: 768px){
+    .container {
+        text-align: center;
+        padding: 100px 30px;
+    }
+
+    .menu {
+        justify-content: space-between;
+        padding: 50px 30px;
+    }
+
+    .nav_menu {
+        padding: 0;
+    }
+
+    .nav__list {
+        display: none;
+    }
+
+    .nav__toggle{
+        display: block;
+    }
+
+    .second__text {
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    .about .play-btn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .polygon {
+        font-size: 40px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+
+    .about .description {
+        width: auto;
+    }
+
+    footer {
+        padding: 20px 30px;
+    }
+
+    .footer__container {
+        text-align: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .address {
+        grid-gap: 20px;
+    }
+}
